@@ -9,6 +9,8 @@
         <!-- 로깅 마스킹 -->
         <Property name="fileLayout">${logFileName} %d{HH:mm:ss.SSS} %-5level %c : - %enc{%msg}{CRLF} %n</Property>
         <!-- <Property name="fileLayout">%d [%t] %-5level %c(%M:%L) - %spi%n</Property> -->
+        <Property name="baseDir">logs</Property>
+
     </Properties>
 
     <Appenders>
@@ -19,8 +21,8 @@
             <AppenderRef ref="RollingAppender" />
         </Async>
         <RollingFile name="RollingAppender"
-                     fileName="logs/edu.log"
-                     filePattern="logs/edu-%d{yyyy-MM-DD-HH}-%02i.log.gz" append="true"
+                     fileName="${baseDir}/edu.log"
+                     filePattern="${baseDir}/edu-%d{yyyy-MM-DD-HH}-%02i.log.gz" append="true"
                      ignoreExceptions="false">
             <PatternLayout>
                 <Pattern>${fileLayout}</Pattern>
@@ -32,7 +34,7 @@
             </Policies>
             <DefaultRolloverStrategy>
                 <Delete basePath="${baseDir}" maxDepth="2">
-                    <IfFileName glob="logs/edu.*.log.gz" />
+                    <IfFileName glob="*/edu-*.log.gz" />
                     <IfLastModified age="1d" />
                 </Delete>
             </DefaultRolloverStrategy>
@@ -73,7 +75,7 @@
 
         <logger name="com.kt.edu" additivity="false" >
             <AppenderRef ref="console" level="info" />
-            <AppenderRef ref="file" level="info" />
+            <AppenderRef ref="file" level="trace" />
         </logger>
 
         <!--logger name="Slf4jSpyLogDelegator" additivity="false" >
