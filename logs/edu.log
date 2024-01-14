@@ -1,19 +1,20 @@
-edu10-1 22:19:42.209 INFO  com.kt.edu.secondproject.SecondprojectApplication : - Starting SecondprojectApplication using Java 17.0.2 on jake-MacBookAir with PID 88971 (/Users/jakelee/edu10-1/target/classes started by jakelee in /Users/jakelee/edu10-1) 
-edu10-1 22:19:42.212 DEBUG com.kt.edu.secondproject.SecondprojectApplication : - Running with Spring Boot v2.6.3, Spring v5.3.15 
-edu10-1 22:19:42.212 INFO  com.kt.edu.secondproject.SecondprojectApplication : - The following profiles are active: local 
-edu10-1 22:19:42.574 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-8080"] 
-edu10-1 22:19:42.575 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
-edu10-1 22:19:42.575 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/9.0.56] 
-edu10-1 22:19:42.603 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
-edu10-1 22:19:42.954 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
-edu10-1 22:19:42.999 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
-edu10-1 22:19:43.007 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 1 msec} 
-edu10-1 22:19:43.008 INFO  jdbc.sqltiming : - create table article ( id long not null, title varchar(255), content varchar(255) )\n {executed in 1 msec} 
-edu10-1 22:19:43.009 INFO  jdbc.sqltiming : - alter table article add constraint article_pk primary key (id)\n {executed in 1 msec} 
-edu10-1 22:19:43.010 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(1, '1', '테스트 1')\n {executed in 0 msec} 
-edu10-1 22:19:43.011 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(2, '2', '테스트2')\n {executed in 0 msec} 
-edu10-1 22:19:43.011 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(3, '3', '테스트 3')\n {executed in 0 msec} 
-edu10-1 22:19:43.029 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-8080"] 
-edu10-1 22:19:43.040 INFO  com.kt.edu.secondproject.SecondprojectApplication : - Started SecondprojectApplication in 0.954 seconds (JVM running for 1.404) 
-edu10-1 22:20:09.570 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
-edu10-1 22:20:09.571 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 
+edu10-1 19:30:41.829 INFO  com.kt.edu.secondproject.SecondprojectApplication : - Starting SecondprojectApplication using Java 17.0.2 with PID 84772 (/Users/jakelee/springboot_mybatis_2/target/classes started by jakelee in /Users/jakelee/springboot_mybatis_2) 
+edu10-1 19:30:41.832 DEBUG com.kt.edu.secondproject.SecondprojectApplication : - Running with Spring Boot v3.2.1, Spring v6.1.2 
+edu10-1 19:30:41.833 INFO  com.kt.edu.secondproject.SecondprojectApplication : - The following 1 profile is active: "local" 
+edu10-1 19:30:42.240 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-8080"] 
+edu10-1 19:30:42.241 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
+edu10-1 19:30:42.241 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/10.1.17] 
+edu10-1 19:30:42.258 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
+edu10-1 19:30:42.299 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
+edu10-1 19:30:42.338 INFO  com.zaxxer.hikari.pool.HikariPool : - hikari-cp - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@47a7c93e 
+edu10-1 19:30:42.338 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
+edu10-1 19:30:42.347 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 1 msec} 
+edu10-1 19:30:42.349 INFO  jdbc.sqltiming : - create table article ( id long not null, title varchar(255), content varchar(255) )\n {executed in 2 msec} 
+edu10-1 19:30:42.350 INFO  jdbc.sqltiming : - alter table article add constraint article_pk primary key (id)\n {executed in 1 msec} 
+edu10-1 19:30:42.352 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(1, '1', '테스트 1')\n {executed in 2 msec} 
+edu10-1 19:30:42.352 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(2, '2', '테스트2')\n {executed in 0 msec} 
+edu10-1 19:30:42.352 INFO  jdbc.sqltiming : - INSERT INTO article(id, title, content) VALUES(3, '3', '테스트 3')\n {executed in 0 msec} 
+edu10-1 19:30:42.639 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-8080"] 
+edu10-1 19:30:42.650 INFO  com.kt.edu.secondproject.SecondprojectApplication : - Started SecondprojectApplication in 0.984 seconds (process running for 1.816) 
+edu10-1 19:30:45.999 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
+edu10-1 19:30:46.000 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 

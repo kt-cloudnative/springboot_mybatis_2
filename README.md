@@ -1,2 +1,2 @@
-# edu10-1
+# Springboot mybatis 2
 Mybatis log4j
