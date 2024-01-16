@@ -5,12 +5,12 @@
 
 <mapper namespace="com.kt.edu.secondproject.repository.ArticleMapper">
     <select id="getId" resultType="long">
-        select hibernate_sequence.nextval from dual
+        select nextval ('hibernate_sequence')
     </select>
 
     <insert id="insert" parameterType="Article">
         <selectKey keyProperty="id" resultType="long" order="BEFORE">
-            select hibernate_sequence.nextval from dual
+            select nextval ('hibernate_sequence')
         </selectKey>
         insert into article
         (id, title, content)
